@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WikiPC Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  	<div class="menu">
+	<a href="history.html" ><img src="ic.png" width="70px" height="70px"><p>History</p></a>
+	<a href="details.html"  style="color: red;"><img src="cpu1.png" width="70px" height="70px"><p style="color: black;">Details</p></a>
+	<a href="index.html" ><img src="pcc.png" width="70px" height="70px"><p>PC</p></a>
+  </div>
+  <div class="reg">
+	<form>
+    <input type="text" name="un" id="username" placeholder="Username" pattern="[a-zA-Z0-9]{2,16}" minlength=2 maxlength=16 required>
+    <input type="email" name="un" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    <input type="password" name="pass1" id="pass1" placeholder="Password" pattern="[A-Za-z0-9]{6,20}" minlength=6 maxlength=20 required>
+    <input type="password" name="pass2" id="pass2" placeholder="Confirm Password" pattern="[A-Za-z0-9]{6,20}" minlength=6 maxlength=20 required>
+    <input type="submit" id="submit_butt" class="butt" value="Send"  onclick="confpass()"/>
+  </form>
+</div>
+  </body>
+</html>
